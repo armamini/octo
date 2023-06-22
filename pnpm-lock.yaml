@@ -6,6 +6,12 @@ importers:
 
   apps/client:
     dependencies:
+      '@trpc/client':
+        specifier: ^10.32.0
+        version: 10.32.0(@trpc/server@10.32.0)
+      '@trpc/server':
+        specifier: ^10.32.0
+        version: 10.32.0
       '@types/node':
         specifier: ^20.3.1
         version: 20.3.1
@@ -1231,6 +1237,14 @@ packages:
     resolution: {integrity: sha512-sJ902EfIzn1Fa+qYmjdQqh8tPsoxyBz+8yBKC2HKUxyezKJFwPGOn7pv4WY6QuQW//ySQi5lJjA/ZT9sNWWNTg==}
     dependencies:
       tslib: 2.5.3
+    dev: false
+
+  /@trpc/client@10.32.0(@trpc/server@10.32.0):
+    resolution: {integrity: sha512-hrj6XV84nE6DH5AmsPJ0JzIRcx3f6zU0tvS705DnZtNBOoMk7Lx+wX+KCDxj4DxLsTXC+roAxZxWwAB6/LGsXA==}
+    peerDependencies:
+      '@trpc/server': 10.32.0
+    dependencies:
+      '@trpc/server': 10.32.0
     dev: false
 
   /@trpc/server@10.32.0:
